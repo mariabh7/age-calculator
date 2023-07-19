@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Age Calculator</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content=" calculator , age calculator , maria-codes, web developer , frontend-dev  "
+    />
+    <meta name="description" content=" simple age calculator " />
+    <link rel="stylesheet" href="age.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="calculator-con">
+      <div class="wrap">
+        <section class="output-s">
+          <div class="inputs">
+            <div class="in-s">
+              <label> day</label>
+              <br />
+              <input type="number" id="day" class="input" />
+            </div>
+            <div class="in-s">
+              <label> month</label>
+              <br />
+              <input type="number" id="month" class="input" />
+            </div>
+            <div class="in-s">
+              <label> year</label>
+              <br />
+              <input type="number" id="year" class="input" />
+            </div>
+          </div>
+        </section>
+        <button id="show-ou" onclick="show()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-narrow-down"
+            width="55"
+            height="55"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M16 15l-4 4" />
+            <path d="M8 15l4 4" />
+          </svg>
+        </button>
+      </div>
+      <section class="results">
+        <p class="year1 , w-n"><span id="num-y">--</span> years</p>
+        <p class="month1, w-n"><span id="num-m">--</span> months</p>
+        <p class="days1 , w-n"><span id="num-d">--</span> days</p>
+      </section>
+    </main>
+    <script src="age.js"></script>
+  </body>
+</html>

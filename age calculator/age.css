@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.calculator-con {
+    padding: 2rem;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 30%;
+
+}
+
+.wrap {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-start;
+
+}
+
+.output-s {
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+
+}
+
+.inputs {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-start;
+}
+
+label {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 60%);
+    letter-spacing: 3px;
+    font-weight: 550;
+    font-size: 1rem;
+    margin: 0 0 20px;
+}
+
+.input {
+    font-size: 32px;
+    font-weight: 700;
+
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+    width: 130px;
+    height: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input:focus {
+    outline: 1px solid hsl(0, 0%, 47%);
+}
+
+.img-b {
+    width: 50px;
+}
+
+#show-ou {
+    cursor: pointer;
+    align-self: flex-end;
+    border: 1px solid hsl(259, 100%, 65%);
+    border-radius: 90%;
+    background-color: hsl(259, 100%, 65%);
+    -webkit-border-radius: 90%;
+    -moz-border-radius: 90%;
+    -ms-border-radius: 90%;
+    -o-border-radius: 90%;
+}
+
+#show-ou:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.w-n {
+    margin: 0;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#num-y,
+#num-m,
+#num-d {
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width:767px) {
+    body {
+        height: 90vh;
+    }
+
+    .calculator-con {
+
+        padding: 1rem;
+        width: 320px;
+        height: 450px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 30%;
+
+    }
+
+    .wrap {
+        display: flex;
+        column-gap: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .output-s {
+        padding: 2rem 0;
+        border-bottom: 1px solid hsl(0, 0%, 86%);
+
+    }
+
+    .inputs {
+        display: flex;
+        column-gap: 1rem;
+        justify-content: flex-start;
+    }
+
+    label {
+        text-transform: uppercase;
+        color: hsl(0, 0%, 60%);
+        letter-spacing: 3px;
+        font-weight: 550;
+        font-size: 1rem;
+        margin: 0 0 20px;
+    }
+
+    .input {
+        font-size: 32px;
+        font-weight: 700;
+        border: 1px solid hsl(0, 0%, 86%);
+        border-radius: 8px;
+        width: 90px;
+        height: 50px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .input:focus {
+        outline: 1px solid hsl(0, 0%, 47%);
+    }
+
+    .img-b {
+        width: 50px;
+    }
+
+    #show-ou {
+        margin: 2rem 0;
+        cursor: pointer;
+        align-self: center;
+        border: 1px solid hsl(259, 100%, 65%);
+        border-radius: 90%;
+        background-color: hsl(259, 100%, 65%);
+        -webkit-border-radius: 90%;
+        -moz-border-radius: 90%;
+        -ms-border-radius: 90%;
+        -o-border-radius: 90%;
+    }
+
+    #show-ou:hover {
+        background-color: hsl(0, 0%, 8%);
+    }
+
+    .w-n {
+        margin: 0;
+        font-style: italic;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    #num-y,
+    #num-m,
+    #num-d {
+        color: hsl(259, 100%, 65%);
+    }
+}
